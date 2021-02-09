@@ -3,39 +3,48 @@
     <style>
         body {
     font-family: "Helvetica Neue";
-    font-weight: 300;
-    color: #000;
+    font-weight: 400;
+    color: #1A1A1A;
+    background: #FAFAFA;
   }
-  
+  .info{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    z-index: 5;
+  }
   a {
-    color: #000;
+    color: #1A1A1A;
     text-decoration: none;
   }
-  
+  .link{
+    color: rgb(18, 81, 218);
+  }
   ul {
     list-style: none;
+    color: rgb(18, 81, 218);
   }
   
   li {
-    padding: 15px;
+    padding: 5px;
   }
   
   .container {
     width: 400px;
     margin: 0 auto;
-    background: #fff;
+    background: #FAFAFA;
     position: absolute;
     bottom: 20px;
     text-align: center;
-    padding-left: 35vw;
-    padding-right: 40vw;
+    padding-left: 35%;
+    padding-right: 35%;
   }
   
   .cat {
     width: 400px;
-    height: 200px;
+    height: 150px;
     margin: 0 auto;
-    background: #fff;
+    background: #FAFAFA;
     position: relative;
     cursor: pointer;
   }
@@ -64,7 +73,7 @@
     position: absolute;
     top: 29px;
     left: 110px;
-    border-right: 4px solid #000;
+    border-right: 4px solid #1A1A1A;
     border-radius: 0 0 50%/50px 20px;
     transform: rotate(-45deg);
   }
@@ -78,7 +87,7 @@
     position: absolute;
     top: 9px;
     right: 95px;
-    border-left: 4px solid #000;
+    border-left: 4px solid #1A1A1A;
     border-radius: 50%/50px 20px 0 0;
     transform: rotate(25deg);
   }
@@ -86,9 +95,9 @@
   .catEars {
     width: 18px;
     height: 18px;
-    background: #fff;
-    border-left: 3px solid #000;
-    border-top: 4px solid #000;
+    background: #FAFAFA;
+    border-left: 3px solid #1A1A1A;
+    border-top: 4px solid #1A1A1A;
     transform: rotate(35deg);
     position: absolute;
     left: 150px;
@@ -100,8 +109,8 @@
   .catEars:before {
     content: "";
     height: 23px;
-    background: #fff;
-    border-left: 4px solid #000;
+    background: #FAFAFA;
+    border-left: 4px solid #1A1A1A;
     transform: rotate(35deg);
     position: absolute;
     left: 98px;
@@ -114,7 +123,7 @@
     background: transparent;
     width: 2px;
     height: 15px;
-    border-right: 4px solid #000;
+    border-right: 4px solid #1A1A1A;
     position: absolute;
     left: 106px;
     bottom: 50px;
@@ -126,7 +135,7 @@
     content: "";
     width: 5px;
     height: 13px;
-    border-right: 4px solid #000;
+    border-right: 4px solid #1A1A1A;
     transform: rotate(10deg);
     position: absolute;
     left: -4px;
@@ -138,7 +147,7 @@
     content: "";
     width: 5px;
     height: 10px;
-    border-right: 4px solid #000;
+    border-right: 4px solid #1A1A1A;
     transform: rotate(9deg);
     position: absolute;
     left: -6px;
@@ -150,7 +159,7 @@
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: #000;
+    background: #1A1A1A;
     position: absolute;
     left: 140px;
     top: 50px;
@@ -162,7 +171,7 @@
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background: #000;
+    background: #1A1A1A;
     position: absolute;
     left: 60px;
     top: 15px;
@@ -177,7 +186,7 @@
     top: 0ps;
     transform: rotate(45deg);
     border-radius: 50%;
-    border: 3px solid #000;
+    border: 3px solid #1A1A1A;
     border-left-color: transparent;
     border-top-color: transparent;
   }
@@ -192,7 +201,7 @@
     top: -10px;
     transform: rotate(20deg);
     border-radius: 50%;
-    border: 3px solid #000;
+    border: 3px solid #1A1A1A;
     border-left-color: transparent;
     border-top-color: transparent;
   }
@@ -200,8 +209,8 @@
   .leftPaw {
     width: 25px;
     height: 30px;
-    background: #fff;
-    border: 4px solid #000;
+    background: #FAFAFA;
+    border: 4px solid #1A1A1A;
     border-bottom: 0 solid transparent;
     border-right: 0 solid transparent;
     border-radius: 50% 40% 0 0;
@@ -217,7 +226,7 @@
     display: block;
     width: 3px;
     height: 15px;
-    background: #000;
+    background: #1A1A1A;
     border-radius: 100% 0 0 0;
     position: absolute;
     left: 24px;
@@ -228,8 +237,8 @@
   .rightPaw {
     width: 25px;
     height: 30px;
-    background: #fff;
-    border: 3px solid #000;
+    background: #FAFAFA;
+    border: 3px solid #1A1A1A;
     border-bottom: 0 solid transparent;
     border-right: 0 solid transparent;
     border-radius: 50% 40% 0 0;
@@ -245,7 +254,7 @@
     display: block;
     width: 3px;
     height: 15px;
-    background: #000;
+    background: #1A1A1A;
     border-radius: 100% 0 0 0;
     position: absolute;
     left: 23px;
@@ -256,11 +265,11 @@
   .surface {
     width: 350px;
     height: 50px;
-    background: #fff;
-    border-top: 3px solid #000;
+    background: #FAFAFA;
+    border-top: 3px solid #1A1A1A;
     transform: rotate(10deg);
     position: absolute;
-    top: 215px;
+    top: 185px;
     z-index: 3;
   }
   
@@ -334,8 +343,8 @@
   .leftPaw2 {
     width: 40px;
     height: 28px;
-    background: #fff;
-    border: 4px solid #000;
+    background: #FAFAFA;
+    border: 4px solid #1A1A1A;
     border-bottom: 0 solid transparent;
     border-right: 0 solid transparent;
     border-radius: 50% 4px 50% 50%;
@@ -351,8 +360,8 @@
     display: block;
     width: 30px;
     height: 5px;
-    background: #fff;
-    border-bottom: 4px solid #000;
+    background: #FAFAFA;
+    border-bottom: 4px solid #1A1A1A;
     border-radius: 50% 4px 50% 50%;
     position: absolute;
     top: 20px;
@@ -362,9 +371,9 @@
   .rightPaw2 {
     width: 45px;
     height: 24px;
-    background: #fff;
-    border-bottom: 3px solid #000;
-    border-left: 3px solid #000;
+    background: #FAFAFA;
+    border-bottom: 3px solid #1A1A1A;
+    border-left: 3px solid #1A1A1A;
     border-radius: 50% 4px 0 40%;
     position: absolute;
     left: 207px;
@@ -378,8 +387,8 @@
     display: block;
     width: 20px;
     height: 5px;
-    background: #fff;
-    border-top: 3px solid #000;
+    background: #FAFAFA;
+    border-top: 3px solid #1A1A1A;
     border-radius: 50% 4px 50% 50%;
     position: absolute;
     top: 0px;
@@ -398,12 +407,30 @@
 
 </head>
 <body>
+    <marquee>A heartful thanks to our supporters: Sankalp Sharma, Aritro Mukherjee, Abhishek Suresh,
+        Sankalp Sharma, Aritro Mukherjee, Abhishek Suresh,
+        Sankalp Sharma, Aritro Mukherjee, Abhishek Suresh,
+    </marquee>
+    <div class = "info">
+        <br>
+        <h1>Welcome to NoAnimation Games</h1>
+        <br>
+        <p>Download and play!</p>
+        <p>links1 link2[in development] link3[in development]</p>
+        <br>
+        <p>All donations will be spent on free healthcare, free education and sustaining this project in ratio of 2:2:1 respectively.</p>
+        <p>Donate if you can. If not, try spreading the word please. :)</p>
+        <p>Radio button for updates on how donations are being done.</p>
+        <p>Subscribe for new game release notifications</p>
+        <br>
+
+    </div>
     <div class="container">
     <div><p></p></div>
     <div class="text">
       <ul>
         <li>Enjoy the game!</li>
-        <li>Subscribe for new game release</li>
+        <li>Subscribe for new game releases!</li>
       </ul>
     </div>
     <div class="cat" onclick='hello()'>
@@ -427,9 +454,13 @@
       </div>
     </div>
     <div class="surface">
-
+        <div>
+            <marquee>Developed by<a class ="link" href= 'http://www.sharmasankalp.com'> Sankalp Sharma. </a>
+            Shout out to <a class ="link" href="https://twitter.com/kbyebea">Beatrize Agustin</a> for bongo cat.</marquee>
+        </div>
     </div>
   </div>
+
       <script>
         (function hello() {
     const x = 5;
@@ -452,5 +483,9 @@
   })();
   
     </script>
-</body>
+<div class="info">
+    <marquee>This project is owned by 'abcd'. Contact for any query: ''. </marquee>
+</div>
+    </body>
+    
 </html>
